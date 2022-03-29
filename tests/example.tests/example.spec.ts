@@ -29,7 +29,7 @@ test("Working with Inputs", async ({ page }) => {
         await expect(errorMessage).toContainText('Login and/or password are wrong.')
 })
 
-test.describe.parallel.only('Hooks', () => {
+test.describe.parallel('Hooks', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('https://example.com')
     })
